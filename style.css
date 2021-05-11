@@ -1,0 +1,43 @@
+*{
+    background-color: rgb(0, 0, 0);
+}
+p{
+    color: white;
+}
+.board img{
+   padding: 5px;
+}
+
+.board { 
+    width: 90%; 
+    height: 300px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    margin: 60px auto; 
+} 
+    
+.board img { 
+    margin: 2px; 
+    transform-style: preserve-3d; 
+    transition: transform 0.5s; 
+} 
+    
+.board img.flip { 
+    animation: popout 1s alternate ease-in-out;
+} 
+
+@keyframes popout{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(1.2);
+    }
+}
+
+.leaderboard{
+    color: white;
+}
+
+button{
+    background-color: white;
+}

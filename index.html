@@ -1,0 +1,45 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery-3.2.0.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="timer">
+        <p id="timerCounter"></p>
+    </div>
+
+    <div class="gamaArea">
+        <div class="board">
+        </div>
+        <button onclick="restartGame()">Restart game</button> 
+    </div>
+
+    <div class="leaderboard">
+        <h1>Leaderboard</h1>
+        <ol id="players">
+        </ol>
+    </div>
+
+    <audio id="hanyfokos">
+        <source src="./Audio/hanyfokos.mp4" type="audio/mpeg">
+    </audio>
+    <audio id="tippmixcsaba">
+        <source src="./Audio/tippmixcsaba.mp4" type="audio/mpeg">
+    </audio>
+    <audio id="legyentanc">
+        <source src="./Audio/legyentanc.mp4" type="audio/mpeg">
+    </audio>
+    <audio id="pepsibela">
+        <source src="./Audio/pepsibela.mp4" type="audio/mpeg">
+    </audio>
+    <audio id="erera">
+        <source src="./Audio/erera.mp4" type="audio/mpeg">
+    </audio>
+    <script src="./puzzle.js"></script>
+</body>
+</html>
