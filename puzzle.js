@@ -20,9 +20,12 @@ let second;
 let board = document.querySelector(".board");
 let leaderboard = document.getElementById("players");
 var timer;
+var playerName;
+var player;
 
 $(document).ready(function () {
-    let player = document.createElement("li");
+    playerName = prompt("Please enter your name!");
+    player = document.createElement("li");
     player.setAttribute("id", "player");
     leaderboard.appendChild(player);
     startTimer();
@@ -114,6 +117,7 @@ function pairFound(){
 }
 
 function restartGame(){
+    playerName = prompt("Please enter your name!");
     cardsFound =0;
     board.innerHTML = "";
     clearInterval(timer);
@@ -127,7 +131,7 @@ function restartGame(){
 
 function checkWin(){
     if(cardsFound === cards.length/2){
-        document.getElementById("player").innerHTML = "player time: minutes: " + minute + " seconds: "+second;
+        document.getElementById("player").innerHTML = playerName + " time: minutes: " + minute + " seconds: "+second;
         alert("YOU WON!");
         clearInterval(timer);
     }
